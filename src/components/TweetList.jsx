@@ -1,5 +1,9 @@
 import Tweet from "./Tweet";
 import "../CSS/TweetList.css"
+import { memo } from "react";
+
+const MemoizedTweet = memo(Tweet);
+
 function TweetList({tweets, onEditTweet}) {
     return(
        
@@ -8,7 +12,7 @@ function TweetList({tweets, onEditTweet}) {
                 tweets.map((tweet) => {
                     return(
                         <li className="tweet-list-item" key={tweet.id}>
-                            <Tweet 
+                            <MemoizedTweet 
                             tweetId = {tweet.id} 
                             content={tweet.content} 
                             likeCount={tweet.likeCount} 
