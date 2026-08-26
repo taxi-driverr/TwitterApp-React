@@ -1,0 +1,7 @@
+.tweet-list{
+    list-style-type: none;
+}
+
+.tweet-list-item{
+    margin-bottom: 1rem;
+}
