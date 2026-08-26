@@ -4,9 +4,19 @@ padding: 1rem;
 width: 600px;
 font-size: larger;
 }
-.likes {
+.likes, .created-at {
     font-size: xx-small;
 }
 .tweet-content {
     margin-bottom:1rem;
+}
+
+.tweet-likes-createdAt-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweet-content-edit-btn-wrapper{
+    display: flex;
+    justify-content: space-between;
 }
